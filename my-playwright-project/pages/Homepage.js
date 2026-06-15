@@ -14,10 +14,10 @@ export class homepage {
        
         this.page=page;
         this.headerlogo= this.page.locator('.w-auto.h-auto' )
-        this. cartlogo=this.page.locator('//small[.="(Practice Site)"]/parent::a/following-sibling::div/span/*[name()="svg"]')
-        this.dropd=this.page.locator('button[data-slot="popover-trigger"]')
+        this.cartlogo=this.page.locator('//small[.="(Practice Site)"]/parent::a/following-sibling::div/span/*[name()="svg"]')
+        this.dropd=('button[data-slot="popover-trigger"]')
         this.dropdafterselect= this.page.locator('//button[text()="High to Low (Price)"]')
-        this. likebtn="(//*[name()='svg' and @fill='currentColor'])[3]"
+        this. likebtn=this.page.locator("(//*[name()='svg' and @fill='currentColor'])[3]");
     }
     async gotohomepage(){
         await this.page.goto('https://practice.qabrains.com/ecommerce')

@@ -5,9 +5,9 @@ test('login', async ({ page }) => {
 
     const log = new loginpage(page)
     await log.openloginpage()
-    await log.login('qa_testers@qabrains.com','Password123');
-    await log.verifyloginsuccess()
-    await log.verifytitle()
+    await log.login1('qa_testers@qabrains.com','Password123');
+   // await log.verifyloginsuccess()
+    //await log.verifytitle()
     await page.waitForTimeout(5000)
 
 

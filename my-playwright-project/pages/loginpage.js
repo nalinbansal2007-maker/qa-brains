@@ -15,7 +15,7 @@ export class loginpage {
    
 
     async openloginpage(){
-        await this.page.goto('https://practice.qabrains.com/')
+        await this.page.goto('https://practice.qabrains.com/ecommerce')
     }
 
     async login1(uname,password){
